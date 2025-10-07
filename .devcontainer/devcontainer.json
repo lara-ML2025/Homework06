@@ -4,12 +4,15 @@
     "cpus": 2
   },
   "waitFor": "onCreateCommand",
-  "updateContentCommand": "python3 -m pip install gradio_client",
   "customizations": {
     "codespaces": { "openFiles": [] },
     "vscode": {
+      "settings": {
+        "extensions.autoCheckUpdates": false,
+        "extensions.autoUpdate": false
+      },
       "extensions": [
-        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter@2025.7.0",
         "ms-python.python"
       ]
     }
